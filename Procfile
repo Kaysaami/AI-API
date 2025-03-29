@@ -1,1 +1,1 @@
-web: gunicorn app:create_app()
+gunicorn wsgi:application --workers 2 --bind 0.0.0.0:$PORT
