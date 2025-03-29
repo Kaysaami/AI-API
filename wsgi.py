@@ -1,3 +1,4 @@
+# wsgi.py
 from app import create_app
 
-application = create_app('production')
+app = create_app('production')  # Adjust config name as needed
