@@ -1,0 +1,574 @@
+# services/config/industry_config.yaml
+technology:
+  name: technology
+  required_sections:
+    - technical skills
+    - experience
+    - projects
+    - certifications
+  skill_categories:
+    programming:
+      - Python
+      - Java
+      - JavaScript
+      - "C++"
+      - "C#"
+      - Ruby
+      - Go
+      - Rust
+      - Swift
+      - Kotlin
+      - TypeScript
+      - PHP
+    web_dev:
+      - HTML
+      - CSS
+      - React
+      - Angular
+      - Vue
+      - NodeJS
+      - Django
+      - Flask
+      - Express
+      - Laravel
+      - Spring
+      - ASP.NET
+    cloud:
+      - AWS
+      - "Amazon Web Services"
+      - GCP
+      - Azure
+      - Kubernetes
+      - Docker
+      - Terraform
+      - Ansible
+      - Jenkins
+      - Serverless
+      - OpenStack
+      - "AWS Lambda"
+      - S3
+    databases:
+      - SQL
+      - MySQL
+      - PostgreSQL
+      - MongoDB
+      - Redis
+      - Cassandra
+      - Oracle
+      - SQLite
+      - Firebase
+      - DynamoDB
+      - Elasticsearch
+    devops:
+      - "CI/CD"
+      - Git
+      - "GitHub Actions"
+      - "GitLab CI"
+      - Jenkins
+      - Terraform
+      - Ansible
+      - Prometheus
+      - Grafana
+      - "ELK Stack"
+      - ArgoCD
+    data:
+      - "Data Analysis"
+      - "Big Data"
+      - "Deep Learning"
+      - "Data Mining"
+      - "Data Visualization"
+      - "Apache Spark"
+      - Hadoop
+    security:
+      - Cybersecurity
+      - "Penetration Testing"
+      - "Network Security"
+      - Cryptography
+      - "SOC2 Compliance"
+      - "ISO27001 Compliance"
+      - "Zero-Trust Security Framework"
+    "Frontend Frameworks":
+      - React
+      - Angular
+      - "Vue.js"
+    ai_ml:
+      - "Machine Learning"
+      - "Artificial Intelligence"
+    management:
+      - "Project Management"
+      - Agile
+      - Scrum
+      - Kanban
+    general: []
+    errors: []
+  keywords:
+    - tech
+    - technology
+    - it
+    - cloud
+    - devops
+    - "machine learning"
+    - "full-stack"
+    - "artificial intelligence"
+    - ai
+    - "developer tools"
+    - sdlc
+    - api
+  experience_patterns:
+    - "\\b(developed|implemented|optimized|architected)\\b"
+    - "\\b(microservices|containerization|serverless)\\b"
+    - "\\b(aws|gcp|azure)\\b"
+    - "\\b(CI/CD|automation|pipeline)\\b"
+  section_weights:
+    experience: 0.8
+    education: 0.2
+
+science:
+  name: science
+  required_sections:
+    - lab skills
+    - research experience
+    - publications
+    - education
+  skill_categories:
+    lab_equipment:
+      - "UV-Vis Spectrometer"
+      - HPLC
+      - "Nano Drop"
+      - "Gas Chromatograph"
+      - Centrifuge
+      - Microscopy
+      - "Mass Spectrometer"
+    techniques:
+      - PCR
+      - "Gel Electrophoresis"
+      - "Cell Culture"
+      - Chromatography
+      - "DNA Sequencing"
+      - "Flow Cytometry"
+      - CRISPR
+    scientific_fields:
+      - Biochemistry
+      - "Molecular Biology"
+      - "Organic Chemistry"
+      - Physics
+      - Genetics
+      - Neuroscience
+      - "Quantum Computing"
+  keywords:
+    - science
+    - "experimental design"
+    - "data collection"
+    - "peer-reviewed"
+    - "hypothesis testing"
+  experience_patterns:
+    - "\\b(published|discovered|analyzed|measured)\\b"
+    - "\\b(PCR|spectrometry|chromatography|sequencing)\\b"
+    - "\\b(research grant|clinical trial|lab protocol)\\b"
+  section_weights:
+    "research experience": 0.7
+    publications: 0.3
+
+healthcare:
+  name: healthcare
+  required_sections:
+    - experience
+    - certifications
+    - medical training
+    - patient care
+  skill_categories:
+    clinical:
+      - "Patient Care"
+      - "Clinical Assessment"
+      - "Medical Diagnosis"
+      - "Surgical Assistance"
+      - Phlebotomy
+      - "Vaccine Administration"
+    medical_knowledge:
+      - Anatomy
+      - Pharmacology
+      - "Medical Ethics"
+      - Epidemiology
+      - "HIPAA Compliance"
+      - "Patient Safety"
+    healthcare_tech:
+      - EHR
+      - EPIC
+      - Cerner
+      - Telehealth
+      - "PACS Systems"
+      - "Health Informatics"
+    certifications:
+      - CPR
+      - BLS
+      - ACLS
+      - RN
+      - EMT
+      - "Medical Coding Certification"
+    "Clinical Tools":
+      - "EPIC EHR"
+      - Cerner
+      - HL7
+    Regulatory:
+      - "HIPAA Compliance"
+      - "FDA Regulations"
+  keywords:
+    - healthcare
+    - HIPAA
+    - EHR
+    - "clinical trials"
+    - "patient outcomes"
+  experience_patterns:
+    - "\\b(diagnosed|treated|administered|monitored)\\b"
+    - "\\b(EMR|telemedicine|pharmacology)\\b"
+    - "\\b(patient education|care plans)\\b"
+  section_weights:
+    experience: 0.7
+    certifications: 0.3
+
+finance:
+  name: finance
+  required_sections:
+    - professional experience
+    - certifications
+    - education
+    - achievements
+  skill_categories:
+    core_skills:
+      - "Financial Analysis"
+      - "Tax Preparation"
+      - Auditing
+      - "GAAP Compliance"
+      - "Portfolio Management"
+      - Cryptocurrency
+      - Blockchain
+      - "Venture Capital"
+      - "Retail Banking"
+      - Fintech
+      - "Fraud Detection"
+      - "Commercial Banking"
+    tools:
+      - QuickBooks
+      - SAP
+      - "Oracle Financials"
+      - "Excel Advanced"
+      - Tableau
+      - "Power BI"
+      - "Bloomberg Terminal"
+      - "Crystal Reports"
+    certifications:
+      - CFA
+      - CPA
+      - FRM
+      - CFE
+      - CFP
+      - ACCA
+      - CIMA
+  keywords:
+    - finance
+    - budgeting
+    - forecasting
+    - "portfolio management"
+    - "risk assessment"
+    - "financial analysis"
+  experience_patterns:
+    - "\\b(analyzed|forecasted|managed|evaluated)\\b"
+    - "\\b(financial statements|investment strategies|risk management)\\b"
+    - "\\b(portfolio diversification|cost reduction|profit margin analysis)\\b"
+  section_weights:
+    "professional experience": 0.6
+    certifications: 0.2
+    achievements: 0.2
+
+business:
+  name: business
+  required_sections:
+    - professional experience
+    - achievements
+    - leadership experience
+    - education
+  skill_categories:
+    marketing:
+      - SEO
+      - SEM
+      - "Social Media Marketing"
+      - "Content Marketing"
+      - "Google Analytics"
+      - "Brand Management"
+      - "Market Research"
+      - "Event Planning"
+      - "Product Launches"
+    sales:
+      - Negotiation
+      - "Cold Calling"
+      - "Sales Strategy"
+      - "Consultative Selling"
+      - "B2B Sales"
+      - "SaaS Sales"
+      - "Enterprise Sales"
+      - "Retail Sales"
+    management:
+      - "Strategic Planning"
+      - "Operations Management"
+      - "Business Development"
+      - "Supply Chain Optimization"
+      - "SOC2 Compliance"
+      - "ISO27001 Compliance"
+      - "GDPR Compliance"
+  keywords:
+    - business
+    - ROI
+    - KPI
+    - B2B
+    - "market share"
+    - "revenue growth"
+  experience_patterns:
+    - "\\b(negotiated|increased|optimized|expanded)\\b"
+    - "\\b(sales pipeline|customer acquisition|brand strategy)\\b"
+    - "\\b(financial modeling|market analysis)\\b"
+  section_weights:
+    "professional experience": 0.7
+    "leadership experience": 0.3
+
+legal:
+  name: legal
+  required_sections:
+    - experience
+    - certifications
+    - publications
+    - professional affiliations
+  skill_categories:
+    law_practice:
+      - "Legal Research"
+      - Litigation
+      - "Contract Law"
+      - Arbitration
+      - Mediation
+    specialties:
+      - "Corporate Law"
+      - "Intellectual Property"
+      - "Real Estate Law"
+      - "Cyber Law"
+    legal_tech:
+      - Westlaw
+      - Clio
+      - "E-Discovery Tools"
+      - "Document Automation"
+  keywords:
+    - legal
+    - litigation
+    - compliance
+    - "intellectual property"
+    - "dispute resolution"
+  experience_patterns:
+    - "\\b(represented|advised|drafted|negotiated)\\b"
+    - "\\b(legal brief|contract review|due diligence)\\b"
+    - "\\b(regulatory compliance|risk mitigation)\\b"
+  section_weights:
+    experience: 0.8
+    certifications: 0.2
+
+education:
+  name: education
+  required_sections:
+    - teaching
+    - "curriculum development"
+    - "professional development"
+    - education
+  skill_categories:
+    teaching:
+      - "Curriculum Development"
+      - "Online Teaching"
+      - "Student Engagement"
+      - "Blended Learning"
+    specialties:
+      - "STEM Education"
+      - "E-Learning"
+      - "Special Education"
+      - "Adult Education"
+    admin:
+      - "Educational Leadership"
+      - "Accreditation Processes"
+      - "Grant Writing"
+      - "Community Outreach"
+  keywords:
+    - pedagogy
+    - "learning outcomes"
+    - "student assessment"
+    - accreditation
+  experience_patterns:
+    - "\\b(taught|developed|mentored|assessed)\\b"
+    - "\\b(lesson plans|instructional design|classroom management)\\b"
+    - "\\b(differentiated instruction|special needs)\\b"
+  section_weights:
+    teaching: 0.6
+    education: 0.4
+
+management:
+  name: management
+  required_sections:
+    - "leadership experience"
+    - "professional development"
+    - achievements
+    - "work history"
+  skill_categories:
+    project:
+      - Agile
+      - Scrum
+      - "Risk Management"
+      - "Resource Allocation"
+      - "Waterfall Methodology"
+    business:
+      - "Process Improvement"
+      - "KPI Tracking"
+      - "Market Analysis"
+      - "Vendor Management"
+    human_resources:
+      - Recruitment
+      - "Employee Relations"
+      - "Talent Acquisition"
+      - "Workforce Planning"
+    soft_skills:
+      - Leadership
+      - Communication
+      - Teamwork
+      - "Problem-Solving"
+      - "Time Management"
+  keywords:
+    - "team building"
+    - OKRs
+    - "change management"
+    - "operational efficiency"
+  experience_patterns:
+    - "\\b(led|managed|streamlined|reduced)\\b"
+    - "\\b(cross-functional teams|budget management)\\b"
+    - "\\b(process improvement|strategic planning)\\b"
+  section_weights:
+    "leadership experience": 0.8
+    achievements: 0.2
+
+research:
+  name: research
+  required_sections:
+    - "research experience"
+    - publications
+    - "grants and funding"
+    - education
+  skill_categories:
+    methods:
+      - "Quantitative Research"
+      - "Qualitative Research"
+      - "Survey Design"
+      - "Meta-Analysis"
+    tools:
+      - R
+      - "Python Pandas"
+      - Tableau
+      - MATLAB
+      - SPSS
+    skills:
+      - "Grant Writing"
+      - "Peer Review"
+      - "Academic Writing"
+      - "Research Ethics"
+  keywords:
+    - "peer review"
+    - methodology
+    - "data interpretation"
+    - "funding acquisition"
+  experience_patterns:
+    - "\\b(published|presented|investigated|secured)\\b"
+    - "\\b(qualitative analysis|quantitative methods)\\b"
+    - "\\b(research proposal|IRB approval)\\b"
+  section_weights:
+    "research experience": 0.7
+    publications: 0.3
+
+creative:
+  name: creative
+  required_sections:
+    - projects
+    - "technical skills"
+    - "freelance work"
+    - education
+  skill_categories:
+    design:
+      - Photoshop
+      - Figma
+      - Blender
+      - "Premiere Pro"
+      - AutoCAD
+      - "UI Design"
+      - "Graphic Design"
+      - Prototyping
+      - "User Research"
+      - "Brand Design"
+      - "Motion Design"
+      - "Game Design"
+      - "3D Modeling"
+    content:
+      - "Video Editing"
+      - Animation
+      - Photography
+      - Copywriting
+      - Storytelling
+  keywords:
+    - "user experience"
+    - "brand identity"
+    - "motion graphics"
+    - prototyping
+  experience_patterns:
+    - "\\b(designed|created|produced|illustrated)\\b"
+    - "\\b(user flows|wireframes|storyboards)\\b"
+    - "\\b(adobe creative suite|3d modeling)\\b"
+  section_weights:
+    projects: 0.7
+    "technical skills": 0.3
+
+retail:
+  name: retail
+  required_sections:
+    - experience
+    - "technical skills"
+    - requirements
+  skill_categories:
+    - retail
+    - "e-commerce"
+    - ecommerce
+    - "online store"
+    - shopping
+    - marketplace
+    - "point of sale"
+    - pos
+  keywords:
+    - retail
+    - "e-commerce"
+    - ecommerce
+    - "online store"
+    - shopping
+    - marketplace
+    - "point of sale"
+    - pos
+  experience_patterns:
+    - "\\b(merchandising|inventory|sales)\\b"
+    - "\\b(e-commerce|ecommerce|retail)\\b"
+    - "\\b(customer service|pos|point of sale)\\b"
+  section_weights:
+    experience: 0.7
+    "technical skills": 0.3
+
+general:
+  name: general
+  required_sections:
+    - experience
+    - education
+    - skills
+  skill_categories: []
+  keywords:
+    - general
+  experience_patterns:
+    - "\\b(managed|developed|created)\\b"
+    - "\\b(experience with|proficient in)\\b"
+  section_weights:
+    experience: 0.7
+    education: 0.3
