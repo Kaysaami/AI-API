@@ -1,15 +1,35 @@
 # wsgi_minimal.py
 import os
-import sys
-print(f"Python version: {sys.version}")
-print(f"Current directory: {os.getcwd()}")
-print(f"Environment PORT: {os.environ.get('PORT', 'Not set')}")
+import logging
 
-# Create a minimal Flask app instead of importing your full app
-from flask import Flask
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Print diagnostic information
+logger.info(f"Starting minimal Flask application")
+port = int(os.environ.get("PORT", 10000))
+logger.info(f"Using port: {port}")
+
+# Create a minimal Flask app
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello from Render! Minimal app is working."
+    return jsonify({
+        "status": "online",
+        "message": "Minimal API is running. Full application features disabled due to memory constraints."
+    })
+
+@app.route('/health')
+def health_check():
+    return jsonify({
+        "status": "healthy",
+        "environment": os.environ.get("RENDER_ENV", "unknown")
+    })
+
+# For direct execution
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=port)
